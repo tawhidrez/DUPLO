@@ -1,0 +1,189 @@
+header {
+    background: #1d2770;
+    color: white;
+    padding: 10px 0;
+    font-family: 'Interstate';
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    font-family: 'Interstate';
+    line-height: 1.6;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    padding-left: 20px;
+}
+
+.image1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    gap: 20px;
+}
+
+.onebox {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.image2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    max-width: 100%;
+    margin-top: 175px;
+    
+}
+
+.image2 img {
+    max-width: 85%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.fivebox {
+    display: flex;
+    gap: 20px;
+}
+
+.fivebox section {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.image3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 100%;
+}
+
+.twobox {
+    display: flex;
+    gap: 20px;
+}
+
+.twobox section {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    nav {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+    
+    header, .image1 img, .image2 img, .image3 img {
+        width: 100%;
+        height: auto;
+    }
+    .flex-container {
+        flex-direction: column; 
+    }
+
+    .image2 {
+        margin-top: 20px;
+    }
+
+    .fivebox {
+    flex-direction: column;
+    gap: 10px;
+    }
+
+    .fivebox section {
+    padding: 10px;
+    margin: 10px 0;
+    }
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+}
+
