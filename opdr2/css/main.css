@@ -11,6 +11,7 @@ header {
     background: #1d2770;
     color: white;
     font-family: 'Interstate';
+    border-bottom: 5px solid #ffffff;
 }
 
 .header {
@@ -48,32 +49,33 @@ body {
 
 h2 {
     margin: 0;
-    text-align: left;
-    color: #1ebdb5;
-    padding-left: 20px;
+    color: #ffffff;
+    text-align: center;
 }
 
-.spelregelsbox {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 30px 0;
-}
-
-.spelregelscontainer {
+.center-spelregels {
     display: flex;
-    gap: 20px;
-    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     margin: 0 auto;
-    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: #1ebdb5;
+    border-bottom: 5px solid #1d2770;
+}
+
+.spelregels {
+    list-style-type: disc;
+    padding: 50;
+    margin: 0;
+    text-align: left;
 }
 
 h3 {
     margin: 0;
-    text-align: center;
     color: #1ebdb5;
-    padding-left: 20px;
+    text-align: center;
 }
 
 .teamcontainer {
@@ -178,9 +180,6 @@ h3 {
   }
 
 @media (min-width: 768px) {
-    .spelregelscontainer {
-        width: 75%;
-    }
 
     .hole10, .hole11, .hole12, .hole13 {
         width: 30%;
