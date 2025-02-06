@@ -21,12 +21,55 @@ h1 {
 .flex-container {
     display: flex;
     gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 .onebox {
     flex: 1;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
+    margin: 30px 0;
+}
+
+.holes-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hole-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 0;
+}
+
+.hole10, .hole11, .hole12, .hole13 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 5px;
+}
+
+.hole10 img, .hole11 img, .hole12 img, .hole13 img {
+    width: 80%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .flex-container {
+        width: 50%;
+    }
+
+    .hole10, .hole11, .hole12, .hole13 {
+        width: 30%;
+        margin: 0 50px;
+    }
+
+    .hole-container {
+        justify-content: center;
+    }
 }
