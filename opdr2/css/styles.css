@@ -61,7 +61,7 @@ h1 {
 
 @media (min-width: 768px) {
     .flex-container {
-        width: 50%;
+        width: 75%;
     }
 
     .hole10, .hole11, .hole12, .hole13 {
