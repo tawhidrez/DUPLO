@@ -8,15 +8,22 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
-    <header>
+<header class="header">
+    <div class="wrapper">
+      <div class="logo">
+        <img src="logo/dux-logo-wit.svg" alt="dux logo">
+      </div>
+      <div class="header-text">
         <h1>Scorepagina Dux Golf Dag</h1>
-    </header>
+      </div>
+    </div>
+  </header>
 
 <main>
-    <div class="flex-container">
-    <div class="onebox">
+    <div class="spelregelscontainer">
+    <div class="spelregelsbox">
         <section id="Spelregels">
+            <h2>Spelregels</h2>
             <li>Alle spelers slaan bij elke hole af.</li> 
             <li>Vervolgens kiest het team gezamenlijk de beste van de 
                 vier ballen om mee verder te spelen.</li> 
@@ -32,6 +39,26 @@
     </div>
     </div>
 </main>
+
+<div class="teamcontainer">
+<div class="teambox">
+    <h3>Team</h3>
+    <input type="checkbox" id="toggle" style="display: none;">
+    <div class="input-container">
+        <input type="text" id="input1" placeholder="Input 1">
+        <input type="text" id="input2" placeholder="Input 2">
+        <input type="text" id="input3" placeholder="Input 3">
+        <input type="text" id="input4" placeholder="Input 4">
+        <label for="toggle" class="submit-button">Submit</label>
+    </div>
+    <div id="output-container">
+        <p id="output1">Output 1</p>
+        <p id="output2">Output 1</p>
+        <p id="output3">Output 3</p>
+        <p id="output4">Output 4</p>
+</div>
+</div>
+    </div>
 
 <div class="holes-wrapper">
     <div class="hole-container">
