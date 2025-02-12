@@ -7,13 +7,12 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
-    <header class="header">
-      <div class="logo">
-        <img src="images/logo/dux-logo-wit.svg" alt="dux logo" />
-      </div>
-      <div class="header-text">
-        <h1>Scorepagina Dux Golf Dag</h1>
-      </div>
+  <header class="header">
+    <div class="logo">
+      <img src="images/logo/dux-logo-wit.svg" alt="dux logo" />
+    </div>
+    <div class="header-text">
+      <h1>Scorepagina Dux Golf Dag</h1>
     </div>
   </header>
 
@@ -21,27 +20,30 @@
     <main>
       <section id="spelregels" class="center-spelregels">
         <h2>Spelregels</h2>
-        <ul class="spelregels">
-          <li>Alle spelers slaan bij elke hole af.</li>
-          <li>
-            Vervolgens kiest het team gezamenlijk de beste van de vier ballen om
-            mee verder te spelen.
-          </li>
-          <li>
-            Vanaf de gekozen positie slaan alle vier spelers opnieuw (de andere
-            drie spelers droppen hun bal binnen één stoklengte van de gekozen
-            positie).
-          </li>
-          <li>
-            Elke speler speelt steeds verder met zijn eigen bal. Na iedere slag
-            kiest het team weer de beste bal, totdat de hole is uitgespeeld.
-          </li>
-          <li>
+        <div class="spelregels">
+          <ul>
+            <li>Alle spelers slaan bij elke hole af.</li>
+            <li>
+              Vervolgens kiest het team gezamenlijk de beste van de vier ballen
+              om mee verder te spelen.
+            </li>
+            <li>
+              Vanaf de gekozen positie slaan alle vier spelers opnieuw (de
+              andere drie spelers droppen hun bal binnen één stoklengte van de
+              gekozen positie).
+            </li>
+            <li>
+              Elke speler speelt steeds verder met zijn eigen bal. Na iedere
+              slag kiest het team weer de beste bal, totdat de hole is
+              uitgespeeld.
+            </li>
+          </ul>
+          <p>
             Op deze manier wordt per hole een teamscore genoteerd. Dit is een
             relatief snelle spelvorm en wordt meestal gespeeld in de
             Stableford-variant.
-          </li>
-        </ul>
+          </p>
+        </div>
       </section>
     </main>
 
@@ -54,7 +56,7 @@
           <input type="text" id="input2" placeholder="Input 2" />
           <input type="text" id="input3" placeholder="Input 3" />
           <input type="text" id="input4" placeholder="Input 4" />
-          <label for="toggle" class="submit-button">Submit</label>
+          <button for="toggle" class="submit-button">Dit is ons team!</button>
         </div>
         <div id="output-container">
           <p id="output1">Output 1</p>
@@ -65,33 +67,72 @@
       </div>
     </div>
 
+    <div class="leaderboardcontainer">
+      <button class="leaderboard-btn" onclick="window.open()">
+        Bekijk Leaderboard
+      </button>
+
     <div class="holes-wrapper">
       <div class="hole-container">
         <div class="hole10">
-            <input type="checkbox" id="toggle" style="display: none" />
           <img src="images/holes/hole10.jpg" alt="hole10" />
-          <input type="number" id="score-hole10" placeholder="Score"/>
+          <input type="number" id="score-hole10" placeholder="Score" />
+          <button class="submit-button">Bevestig</button>
         </div>
         <div class="hole11">
           <img src="images/holes/hole11.jpg" alt="hole11" />
-          <input type="number" id="score-hole11" placeholder="Score"/>
+          <input type="number" id="score-hole11" placeholder="Score" />
+          <button class="submit-button">Bevestig</button>
         </div>
       </div>
       <div class="hole-container">
         <div class="hole12">
           <img src="images/holes/hole12.jpg" alt="hole12" />
-          <input type="number" id="score-hole12" placeholder="Score"/>
+          <input type="number" id="score-hole12" placeholder="Score" />
+          <button class="submit-button">Bevestig</button>
         </div>
         <div class="hole13">
           <img src="images/holes/hole13.jpg" alt="hole13" />
-          <input type="number" id="score-hole13" placeholder="Score"/>
+          <input type="number" id="score-hole13" placeholder="Score" />
+          <button class="submit-button">Bevestig</button>
+        </div>
+      </div>
+      <div class="hole-container">
+        <div class="hole14">
+          <img src="images/holes/hole14.jpg" alt="hole14" />
+          <input type="number" id="score-hole14" placeholder="Score" />
+          <button class="submit-button">Bevestig</button>
+        </div>
+        <div class="hole15">
+          <img src="images/holes/hole15.jpg" alt="hole15" />
+          <input type="number" id="score-hole15" placeholder="Score" />
+          <button class="submit-button">Bevestig</button>
+        </div>
+      </div>
+      <div class="hole-container">
+        <div class="hole16">
+          <img src="images/holes/hole16.jpg" alt="hole16" />
+          <input type="number" id="score-hole16" placeholder="Score" />
+          <button class="submit-button">Bevestig</button>
+        </div>
+        <div class="hole17">
+          <img src="images/holes/hole17.jpg" alt="hole17" />
+          <input type="number" id="score-hole17" placeholder="Score" />
+          <button class="submit-button">Bevestig</button>
+        </div>
+      </div>
+      <div class="hole-container">
+        <div class="hole18">
+          <img src="images/holes/hole18.jpg" alt="hole18" />
+          <input type="number" id="score-hole18" placeholder="Score" />
+          <button class="submit-button">Bevestig</button>
         </div>
       </div>
     </div>
 
     <div class="leaderboardcontainer">
       <button class="leaderboard-btn" onclick="window.open()">
-        Leaderboard
+        Bekijk Leaderboard
       </button>
     </div>
   </body>

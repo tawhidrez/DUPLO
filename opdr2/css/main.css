@@ -51,16 +51,16 @@ h2 {
   text-align: center;
   margin: 0 auto;
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
   background: #1ebdb5;
   border-bottom: 5px solid #1d2770;
 }
 
 .spelregels {
   list-style-type: disc;
-  padding: 50;
-  margin: 0;
+  margin: 10px;
   text-align: left;
+  margin-bottom: 20px;
 }
 
 h3 {
@@ -103,14 +103,15 @@ h3 {
   padding: 10px 20px;
   background-color: #1d2770;
   color: white;
-  border: none;
+  border-radius: 5px;
+  border: outset 5px #1ebdb5;
   cursor: pointer;
   text-align: center;
   display: inline-block;
 }
 
 .submit-button:hover {
-  background-color: #16205a;
+  background-color: #1ebdb5;
 }
 
 #output-container {
@@ -143,7 +144,12 @@ h3 {
 .hole10,
 .hole11,
 .hole12,
-.hole13 {
+.hole13,
+.hole14,
+.hole15,
+.hole16,
+.hole17,
+.hole18 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -154,7 +160,12 @@ h3 {
 .hole10 img,
 .hole11 img,
 .hole12 img,
-.hole13 img {
+.hole13 img,
+.hole14 img,
+.hole15 img,
+.hole16 img,
+.hole17 img,
+.hole18 img {
   width: 80%;
   height: auto;
 }
@@ -162,9 +173,14 @@ h3 {
 .hole10 input,
 .hole11 input,
 .hole12 input,
-.hole13 input {
-    margin-top: 10px;
-    width: 80%;
+.hole13 input,
+.hole14 input,
+.hole15 input,
+.hole16 input,
+.hole17 input,
+.hole18 input {
+  margin-top: 10px;
+  width: 80%;
 }
 
 .leaderboardcontainer {
@@ -175,25 +191,30 @@ h3 {
 .leaderboard-btn {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
+  background-color: #1ebdb5;
+  color: rgb(0, 0, 0);
+  border: inset, 5px, #1d2770;
   border-radius: 4px;
   cursor: pointer;
 }
 .leaderboard-btn:hover {
-  background-color: #45a049;
+  background-color: #1d2770;
+  color: rgb(255, 255, 255);
 }
 
 @media (min-width: 768px) {
   .hole10,
   .hole11,
   .hole12,
-  .hole13 {
+  .hole13,
+  .hole14,
+  .hole15,
+  .hole16,
+  .hole17,
+  .hole18 {
     width: 30%;
     margin: 0 50px;
   }
-
   .hole-container {
     justify-content: center;
   }
@@ -209,5 +230,8 @@ h3 {
   }
   h2 {
     text-align: center;
+  }
+  .spelregels {
+    width: 85%;
   }
 }
