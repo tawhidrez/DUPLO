@@ -51,6 +51,7 @@ h2 {
 }
 
 .center-spelregels {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,8 +59,25 @@ h2 {
   margin: 0 auto;
   padding-top: 25px;
   padding-bottom: 10px;
-  background: #1ebdb5;
+  background: url("../images/golffoto.png");
+  background-size: cover;
   border-bottom: 5px solid #1d2770;
+}
+
+.center-spelregels::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.center-spelregels > * {
+  position: relative;
+  z-index: 2;
 }
 
 .spelregels {
@@ -67,6 +85,7 @@ h2 {
   margin: 10px;
   text-align: left;
   margin-bottom: 20px;
+  color: #ffffff;
 }
 
 h3 {
@@ -91,7 +110,8 @@ h3 {
   margin: 10px 0;
 }
 
-input, button {
+input,
+button {
   font-family: "Interstate", sans-serif;
 }
 
@@ -138,17 +158,30 @@ input, button {
   display: block;
 }
 
-.holes-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+details {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  width: 75%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #1d2770;
+  color: white;
+  border-radius: 5px;
 }
 
 .hole-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin: 20px;
+  margin: 20px auto;
 }
 
 .hole10,
@@ -163,8 +196,6 @@ input, button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 45%;
-  margin: 0 10px;
 }
 
 .hole10 img,
@@ -176,7 +207,7 @@ input, button {
 .hole16 img,
 .hole17 img,
 .hole18 img {
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 
@@ -190,7 +221,7 @@ input, button {
 .hole17 input,
 .hole18 input {
   margin-top: 10px;
-  width: 80%;
+  width: 100%;
 }
 
 .leaderboardcontainer {
