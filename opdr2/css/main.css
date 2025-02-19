@@ -243,6 +243,33 @@ summary {
   color: rgb(255, 255, 255);
 }
 
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
+  background: #1ebdb5;
+  color: white;
+}
+
+.footer {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+}
+
+.logofooter {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.logofooter img {
+  max-width: 40%;
+  max-height: 40%;
+}
+
 @media (min-width: 768px) {
   .hole10,
   .hole11,
@@ -269,10 +296,11 @@ summary {
     max-width: 80px;
     max-height: 80px;
   }
-  h2 {
-    text-align: center;
-  }
   .spelregels {
     width: 85%;
+  }
+  .logofooter {
+    max-width: 175px;
+    max-height: 175px;
   }
 }
