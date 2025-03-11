@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Orbitron", sans-serif;
+  background: url("../images/password-background.png") no-repeat center center
+    fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.center-box {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin-top: 20px;
+  width: 300px;
+}
+
+.center-box label,
+.center-box button {
+  display: block;
+  margin: 10px 0;
+}
+
+.center-box input[type="number"],
+.center-box input[type="checkbox"] {
+  margin-left: 10px;
+}
+
+.center-box .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+.center-box .output {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #1e0ff044;
+  color: #ffffff;
+  font-size: 1.2em;
+  border-radius: 20px;
+  font-size: 1.2em;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    margin: 0 20px;
+  }
+}

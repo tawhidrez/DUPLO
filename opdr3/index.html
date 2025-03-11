@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wachtwoord generator</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <h1>Wachtwoord Generator</h1>
+
+  <body>
+    <div class="center-box">
+      <label>
+        Lengte
+        <input id="len" min="6" type="number" value="12" />
+      </label>
+      <label> <input id="upper" type="checkbox" checked /> Hoofdletters </label>
+      <label> <input id="nums" type="checkbox" checked /> Cijfers </label>
+      <label>
+        <input id="special" type="checkbox" checked /> Speciale tekens
+      </label>
+      <div class="button-container">
+        <button class="btn" onclick="generate()">Genereer</button>
+        <button class="btn" onclick="reset()">Reset</button>
+      </div>
+      <div class="output" id="passOut"></div>
+    </div>
+
+    <script>
+      function genPass(len, upper, nums, special) {
+        const lower = "abcdefghijklmnopqrstuvwxyz";
+        const upperChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        const numChars = "0123456789";
+        const specialChars = "!@#$%^&*()-_=+[]{}|;:,.<>?";
+        let chars = lower;
+
+        if (upper) chars += upperChars;
+        if (nums) chars += numChars;
+        if (special) chars += specialChars;
+
+        let pass = "";
+        for (let i = 0; i < len; i++) {
+          const randIdx = Math.floor(Math.random() * chars.length);
+          pass += chars[randIdx];
+        }
+
+        return pass;
+      }
+      function generate() {
+        const len = parseInt(document.getElementById("len").value);
+        const upper = document.getElementById("upper").checked;
+        const nums = document.getElementById("nums").checked;
+        const special = document.getElementById("special").checked;
+
+        const pass = genPass(len, upper, nums, special);
+        document.getElementById("passOut").textContent = pass;
+      }
+      function reset() {
+        document.getElementById("len").value = 12;
+        document.getElementById("upper").checked = true;
+        document.getElementById("nums").checked = true;
+        document.getElementById("special").checked = true;
+        document.getElementById("passOut").textContent =" ";
+      }
+    </script>
+  </body>
+</html>
