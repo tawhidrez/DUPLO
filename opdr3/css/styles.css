@@ -69,10 +69,16 @@ h1 {
   position: absolute;
   right: 10px;
   top: 15px;
-  transform: translateY(-50%); 
+  transform: translateY(-50%);
   cursor: pointer;
   color: #ffffff7f;
   font-size: 1em;
+}
+
+.center-box .strength {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #333;
 }
 
 @media (max-width: 768px) {
